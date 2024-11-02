@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Hero from './Components/Hero/Hero.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
-import Section from './Components/Section/Section.jsx';
+// import Section from './Components/Section/Section.jsx';
+import Albums from './Components/Albums/Albums.jsx';
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <Hero />
       </main>
       <albums>
-      <Section />
+      <Albums />
       </albums>
     </div>
   );

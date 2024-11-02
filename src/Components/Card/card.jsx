@@ -21,7 +21,7 @@ export default function MediaCard({album}) {
       <CardContent style={{ padding: '10px', textAlign: 'center' }}>
         <Chip
           label={`${album.follows} Follows`}
-          style={{ backgroundColor: '#1db954', color: 'white', marginBottom: '8px' }}
+          style={{ backgroundColor: 'black', color: 'white', marginBottom: '8px' }}
           size="small"
         />
         <Typography variant="body2" component="div" style={{ fontWeight: 'bold' }}>

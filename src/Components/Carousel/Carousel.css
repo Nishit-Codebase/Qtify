@@ -1,0 +1,10 @@
+.custom-swiper .carousel-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .custom-swiper .swiper-button-next,
+  .custom-swiper .swiper-button-prev {
+    color: #1db954;
+  }
+  
