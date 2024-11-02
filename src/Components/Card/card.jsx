@@ -19,6 +19,7 @@ export default function MediaCard({album}) {
         style={{ borderRadius: '10px 10px 0 0' }}
       />
       <CardContent style={{ padding: '10px', textAlign: 'center' }}>
+        <Typography>{album.title}</Typography>
         <Chip
           label={`${album.follows} Follows`}
           style={{ backgroundColor: 'black', color: 'white', marginBottom: '8px' }}

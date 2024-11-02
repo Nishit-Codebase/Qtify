@@ -9,8 +9,8 @@
   }
   
   .search-container {
-    flex: 1;                           /* Allows Search to take up more space */
-    max-width: 5rem;                  /* Limits the max width of Search */
+    flex: 1;                           
+    max-width: 5rem;                 
     margin-right: 45rem;
     margin-top: .5rem;
   }
