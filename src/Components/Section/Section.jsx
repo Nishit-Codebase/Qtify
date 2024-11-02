@@ -93,7 +93,7 @@ const Section = ({ title, apiEndpoint }) => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
         <Typography variant="h5" style={{ color: 'white' }}>{title}</Typography>
         <Button variant="text" style={{ color: '#1db954' }} onClick={toggleView}>
-          {collapsed ? 'Show All' : 'Collapse'}
+          {collapsed ? 'show all' : 'Collapse'}
         </Button>
       </div>
       {collapsed ? (
