@@ -12,9 +12,9 @@ function Hero() {
         <h1>Over thousands podcast episodes</h1>
       </div>
       <div>
-        <img
+        <img className={styles.img}
           src={(HeroImage)}
-          width={212}
+          width={412}
           alt="headphones"
         />
       </div>
