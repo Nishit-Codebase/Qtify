@@ -1,31 +1,33 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
+import {Chip } from '@mui/material';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import styles from "./card.module.css";
 
-export default function MediaCard() {
+export default function MediaCard({album}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="album-card" variant="outlined" style={{ backgroundColor: '#181818', color: 'white', borderRadius: '10px' }}>
       <CardMedia
-        sx={{ height: 140 }}
-        image="https://images.prismic.io/milanote/df7eeb83a07162b45ac2e882cac055de9411054a_cover.jpg?auto=compress,format"
-        title="Songs"
+        component="img"
+        alt={album.name}
+        height="180"
+        image={album.image}
+        style={{ borderRadius: '10px 10px 0 0' }}
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Nirvana
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Nirvana is a legend
+      <CardContent style={{ padding: '10px', textAlign: 'center' }}>
+        <Chip
+          label={`${album.follows} Follows`}
+          style={{ backgroundColor: '#1db954', color: 'white', marginBottom: '8px' }}
+          size="small"
+        />
+        <Typography variant="body2" component="div" style={{ fontWeight: 'bold' }}>
+          {album.name}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
-}
+};

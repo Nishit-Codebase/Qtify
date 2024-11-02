@@ -2,7 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import Hero from './Components/Hero/Hero.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
-import MediaCard from './Components/Card/card.jsx';
+import Section from './Components/Section/Section.jsx';
+
+
+
 
 
 function App() {
@@ -15,7 +18,7 @@ function App() {
       <Hero />
       </main>
       <albums>
-      <MediaCard />
+      <Section />
       </albums>
     </div>
   );
