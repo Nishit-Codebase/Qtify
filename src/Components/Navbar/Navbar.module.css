@@ -1,6 +1,6 @@
 .navbar {
-    background-color: var(--color-primary);
-    height: 74px;
+    background-color: #34c94b;
+    height: 3rem;
     width: 100vw;
     padding: 0px 32px;
     display: flex;
@@ -8,3 +8,9 @@
     justify-content: space-between;
   }
   
+  .search-container {
+    flex: 1;                           /* Allows Search to take up more space */
+    max-width: 5rem;                  /* Limits the max width of Search */
+    margin-right: 45rem;
+    margin-top: .5rem;
+  }

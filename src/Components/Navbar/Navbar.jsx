@@ -1,21 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
+// import Buttons from "../Button/Buttons";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
+import Buttons from "../Button/Button";
 
-function Navbar({ searchData }) {
+
+// searchData as a prop 
+
+function Navbar({searchData}) {
   return (
     <nav className={styles.navbar}>
       <Link to="/">
         <Logo />
       </Link>
-      {/* <Search
+      <div className={styles["search-container"]}>
+      <Search
         placeholder="Search a song of your choice"
         searchData={searchData}
-      /> */}
-      <Button>Give Feedback</Button>
+      />
+      </div>
+      <Buttons />
     </nav>
   );
 }
