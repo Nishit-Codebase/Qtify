@@ -43,18 +43,18 @@ const Carousel = ({ items, renderItem }) => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       }}
-      spaceBetween={1}
-      slidesPerView={8}
+      spaceBetween={10}
+      slidesPerView={7}
       onSwiper={(swiper) => (swiperRef.current = swiper)}
       onReachEnd={() => setIsEnd(true)}
-      onFromEdge={() => setIsEnd(false)} // Trigger when leaving the end
-      breakpoints={{
-        640: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
-        1024: { slidesPerView: 4 },
-        1440: { slidesPerView: 6 }, // Add larger breakpoints
-        1600: { slidesPerView: 7 }  // Ensure 7 cards for large screens
-      }}
+      onFromEdge={() => setIsEnd(false)} 
+      // breakpoints={{
+      //   640: { slidesPerView: 2 },
+      //   768: { slidesPerView: 3 },
+      //   1024: { slidesPerView: 4 },
+      //   1440: { slidesPerView: 6 }, 
+      //   1600: { slidesPerView: 7 }  
+      // }}
       
       className="custom-swiper"
     >

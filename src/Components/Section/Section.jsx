@@ -61,7 +61,7 @@ const Section = ({ title, apiEndpoint }) => {
         // </Grid>
         <Grid container spacing={2} data-testid="show-all-grid">
   {data.map((item) => (
-    <Grid item xs={6} sm={4} md={3} lg={2} key={item.id}>
+    <Grid item xs={12} sm={6} md={4} lg={2} xl={1} key={item.id}>
       <MediaCard album={item} />
     </Grid>
   ))}
