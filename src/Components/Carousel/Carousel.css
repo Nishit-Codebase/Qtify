@@ -1,6 +1,8 @@
 .custom-swiper .carousel-slide {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
   }
   
   .custom-swiper .swiper-button-next,
@@ -8,3 +10,18 @@
     color: #1db954;
   }
   
+  .custom-swiper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-container {
+    width: 100%; /* Ensure full width */
+    max-width: 100%; /* Remove any restrictions */
+  }
+  
+
+  .swiper-slide{
+    margin: 0;
+    padding: 0;
+  }
